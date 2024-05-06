@@ -1,0 +1,8 @@
+src
+node_modules
+.vscode
+package-lock.json
+tsconfig.json
+jestrnpreview*
+dev-mode-server.js
+preview.gif

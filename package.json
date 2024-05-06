@@ -1,0 +1,36 @@
+{
+  "name": "test-preview",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "bin": "./dist/server.js",
+  "license": "MIT",
+  "readme": "README.md",
+  "description": "Utility that allows visualization of component tests for react native applications",
+  "keywords": [
+    "react",
+    "react-native",
+    "testing",
+    "preview"
+  ],
+  "scripts": {
+    "tsc": "tsc",
+    "build": "esbuild src/index.js --outdir=./dist --sourcemap --bundle --packages=external --platform=node",
+    "build-server": "node dev-mode-server.js",
+    "start-server": "WATCH=true DEBUG=true node dev-mode-server.js",
+    "pack": "npm run build && npm run build-server && npm run tsc && npm pack"
+  },
+  "dependencies": {
+    "fastify": "^4.26.2"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "react-test-renderer": "*"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "esbuild": "^0.19.8",
+    "typescript": "^5.4.5"
+  },
+  "packageManager": "yarn@3.6.4"
+}
