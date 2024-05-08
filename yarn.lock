@@ -698,9 +698,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-native-test-preview/lib@workspace:.":
+"@react-native-test-preview/test-preview@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@react-native-test-preview/lib@workspace:."
+  resolution: "@react-native-test-preview/test-preview@workspace:."
   dependencies:
     "@babel/core": ^7.20.0
     esbuild: ^0.19.8
@@ -712,7 +712,7 @@ __metadata:
     react-native: "*"
     react-test-renderer: "*"
   bin:
-    lib: ./dist/server.js
+    test-preview: ./dist/server.js
   languageName: unknown
   linkType: soft
 
