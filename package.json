@@ -17,6 +17,7 @@
   ],
   "scripts": {
     "tsc": "tsc",
+    "release": "release-it",
     "build": "esbuild src/index.js --outdir=./dist --sourcemap --bundle --packages=external --platform=node",
     "build-server": "node dev-mode-server.js",
     "start-server": "WATCH=true DEBUG=true node dev-mode-server.js",
