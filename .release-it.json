@@ -9,7 +9,6 @@
   },
   "npm": {
     "publish": true,
-    "publishPath": "dist/",
     "access": "public"
   }
 }
