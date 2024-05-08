@@ -5,5 +5,4 @@ package-lock.json
 tsconfig.json
 jestrnpreview*
 dev-mode-server.js
-preview.gif
 .yarn/cache

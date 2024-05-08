@@ -6,5 +6,10 @@
     "release": true,
     "web": true,
     "autoGenerate": true
+  },
+  "npm": {
+    "publish": true,
+    "publishPath": "dist/",
+    "access": "public"
   }
 }

@@ -7,7 +7,8 @@
   "readme": "README.md",
   "description": "Utility that allows visualization of component tests for react native applications",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   },
   "keywords": [
     "react",
