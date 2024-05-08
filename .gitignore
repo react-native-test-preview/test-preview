@@ -10,3 +10,5 @@ yarn-error.*
 # macOS
 .DS_Store
 *.pem
+
+.yarn/cache
