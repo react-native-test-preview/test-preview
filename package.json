@@ -3,8 +3,17 @@
   "version": "0.1.2",
   "main": "./dist/index.js",
   "bin": "./dist/server.js",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "typings": "./dist/index.d.ts",
   "license": "MIT",
   "readme": "README.md",
+  "author": "Lyuboslav Lyubenov",
   "description": "Utility that allows visualization of component tests for react native applications",
   "publishConfig": {
     "access": "public",
@@ -22,7 +31,7 @@
     "build": "esbuild src/index.js --outdir=./dist --sourcemap --bundle --packages=external --platform=node",
     "build-server": "node dev-mode-server.js",
     "start-server": "WATCH=true DEBUG=true node dev-mode-server.js",
-    "pack": "npm run build && npm run build-server && npm run tsc && npm pack"
+    "build-all": "npm run build && npm run build-server"
   },
   "dependencies": {
     "fastify": "^4.26.2"
