@@ -1,6 +1,6 @@
 {
   "name": "@react-native-test-preview/lib",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "bin": "./dist/server.js",
   "license": "MIT",
