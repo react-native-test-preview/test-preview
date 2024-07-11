@@ -56,7 +56,7 @@ describe('App', () => {
 
 ## Examples
 
-Soon...
+See https://github.com/react-native-test-preview/example-todo-app
 
 ## Caveats
 
