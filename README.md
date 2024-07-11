@@ -17,11 +17,11 @@
 
 ## How to use
 
-`npm i @react-native-test-preview/lib -D` or `yarn add @react-native-test-preview/lib -D`
+`npm i @react-native-test-preview/test-preview -D` or `yarn add @react-native-test-preview/test-preview -D`
 
 In your App.tsx file:
 ```diff
-+import { TestPreviewComponent } from '@react-native-test-preview/lib';
++import { TestPreviewComponent } from '@react-native-test-preview/test-preview';
 
 function App() {
   //...
@@ -44,7 +44,7 @@ then in the terminal: `npm run preview-server`
 And in your test files:
 
 ```diff
-+import { savePreview } from '@react-native-test-preview/lib';
++import { savePreview } from '@react-native-test-preview/test-preview';
 
 describe('App', () => {
   it('should work as expected', () => {
@@ -64,14 +64,14 @@ If you test components that have external libraries with custom native component
 
 Example:
 ```jsx
-import { registerComponent } from '@react-native-test-preview/lib';
+import { registerComponent } from '@react-native-test-preview/test-preview';
 import MyLibraryComponent from 'external-library';
 
 registerComponent(MyLibraryComponent)
 ```
 or
 ```jsx
-import { registerComponent } from '@react-native-test-preview/lib';
+import { registerComponent } from '@react-native-test-preview/test-preview';
 import MyLibraryComponent from 'external-library';
 
 registerComponent(MyLibraryComponent, { prop1: value, prop2: value2 })
